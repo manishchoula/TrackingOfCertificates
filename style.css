@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin-top: 0px;
+    font-size: 30px;
+    /* height: 25%; */
+    /* border: 2px green solid; */
+    display: flex; /* Use flexbox */
+    align-items: center;
+    justify-content: center;
+}
+#ku-logo{
+    /* display: inline-block; */
+    height: 90px;
+    width: 85px;
+
+}
+#ku-text{
+    color: #434242;
+    display: inline-block;
+    /* border: 2px red solid; */
+    font-family: "Old English Text MT";
+    /* width: 45%; */
+    font-size: 40px;
+    padding-top: 0;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-right: 220px;
+}
+
+#online-portal{
+    color: #EF7716;
+    /* width: 50%; */
+    display: inline-block;
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+    margin-left: 10px;
+    margin-top: 0px;
+    /* border: 2px red solid; */
+}
+.home-logo{
+    /* width: 70px !important; */
+    color: #898787;
+    font-size: 25px;
+    background-color: yellow;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 12px;
+    padding-left: 16px;
+    height: 50px;
+    width: 70px;
+}
+
+.menu{
+    display: flex;
+    background-color: #2D607E;
+    color: white;
+    align-items: center;
+    /* justify-content: center; */
+    width: 74%;
+    margin-left: 13%;
+    align-self: center;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px black solid;
+    border-radius: 15px;
+}
+.menu a{
+    /* border: 1px red solid; */
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;;
+}
+.menu img{
+    /* background-color: yellow; */
+    padding: 10px 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+}
+/* #diamond {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid yellow;
+	border-bottom: 10px solid transparent;
+} */
