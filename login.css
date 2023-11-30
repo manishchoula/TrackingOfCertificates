@@ -84,3 +84,11 @@
     width: 100%;
     margin: 18px 0 9px 0;
   }
+  .forgot a{
+    margin-left: 75px;
+    color: rgb(122, 124, 129);
+    margin-top: 10px;
+  }
+  .forgot a:hover{
+    color: #eceffc;
+  }
