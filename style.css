@@ -58,8 +58,8 @@ body{
     color: white;
     align-items: center;
     /* justify-content: center; */
-    width: 70%;
-    margin-left: 15%;
+    width: 68%;
+    margin-left: 16%;
     align-self: center;
     font-size: 15px;
     font-weight: bold;
@@ -84,7 +84,7 @@ body{
     font-weight: normal;
     position: relative;
     /* float: right; */
-    margin-left:170px;
+    margin-left:50px;
 }
 .body-section h1{
     /* position: absolute; */
