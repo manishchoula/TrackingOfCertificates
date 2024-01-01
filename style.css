@@ -129,10 +129,59 @@ body{
     height: 30px;
     background-color: #2D607E;
     width: 100%;   
-    /* float: right; */
+    color: white ;
     margin-top: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.acadamics-container{
+    
+    margin-top: 20px !important;
+    margin: auto;
+    width: 88%;
+    background-color: #ffffff;
+    /* height: 60%; */
+}
+.add-academics-header{
+    background-color: #f7f7f7;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+.academics-body{
+    background-color: #ffffff;
+    padding: 10px 20px;
+    /* display: d-flex; */
+    
+}
+.btn-course{
+    width: 35%;
+    color: #585f67 !important;
+    border-radius: 0% !important;
+    background-color:  #e8ecef !important;
+    border: 2px #e1e5e9 !important;
+}
+.hallticket-section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.namebox-acadamics{
+    width: 65% !important;
+}
+select{
+    border-radius: 0% !important;
+}
+.submit-btn{
+    width: 250px !important;
+}
+.submit-section{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.month-section{
+    width: 25% !important;
 }
