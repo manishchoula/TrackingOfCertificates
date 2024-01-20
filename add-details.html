@@ -37,18 +37,18 @@
                         <div class="col-md-6 p-2 option-box">
                             <div class="d-flex">
                                 <button class="btn btn-secondary btn-course">Course Type</button>
-                                <select class="form-select form-width" aria-label="Default select example">
+                                <select class="form-select form-width" aria-label="Default select example" id="select1" name="select1" onchange="selectCourse(this.id,'select2')">
                                     <option selected>Select Course Type</option>
-                                    <option value="1">Under Graduation</option>
-                                    <option value="2">Post Graduation</option>
-                                    <option value="3">Professional</option>
+                                    <option value="Under Graduation">Under Graduation</option>
+                                    <option value="Post Graduation">Post Graduation</option>
+                                    <option value="Professional">Professional</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-6 p-2 option-box">
                             <div class="d-flex">
                                 <button class="btn btn-secondary btn-course">Course</button>
-                                <select class="form-select form-width" aria-label="Default select example">
+                                <select class="form-select form-width" aria-label="Default select example" id="select2" name="select2">
                                     <option selected>Select Course Type</option>
                                     
                                 </select>
@@ -109,6 +109,76 @@
         </div>
     </div>
 
+    <script>
+
+        function selectCourse(s1,s2)
+        {
+            var s1= document.getElementById(s1);
+            var s2 = document.getElementById(s2);
+
+            s2.innerHTML = "";
+
+            if(s1.value == "Under Graduation"){
+                var optionArray = [
+                'b.Li.Sc|B.Li.Sc',
+                'bBA|BBA',
+                'bHM & CT|BHM & CT',
+                'history|History',
+                'b.Sc(B)|B.Sc(B)',
+                'b.Sc(M)|B.Sc(M)',
+                'b.Sc(V)|B.Sc(V)',
+                'b.Com|B.Com',
+                'b.A|B.A',
+                'b.B.M|B.B.M',
+                'bCA|BCA',
+                'b.Sc(V)]|B.Sc(V)'];
+            }
+            else if(s1.value == "Post Graduation"){
+                var optionArray = [
+                'pGDCA|PGDCA',
+                'pGDG&C|PGDG&C',
+                'm.A|M.A',
+                'story|Story',
+                'm.COM|M.COM',
+                'm.Sc|M.Sc',
+                'mASTER OF SOCIAL WORK|MASTER OF SOCIAL WORK',
+                'mASTER OF TOURISM|MASTER OF TOURISM',
+                'm.H.R.M.|M.H.R.M.',
+                'm.Li.Sc|M.Li.Sc', 
+                'm.C.J.|M.C.J.',
+                'm.P.Ed|M.P.Ed' ];
+
+            }
+            else if(s1.value == "Professional"){
+                var optionArray = [
+                    'b.Ed|B.Ed',
+                    'b.TECH|B.TECH',
+                    'b.Pharmacy|B.Pharmacy',
+                    'lAW|LAW',
+                    'mBA|MBA',
+                    'mCA|MCA',
+                    'm.Pharmacy|M.Pharmacy',
+                    'm.TECH|M.TECH',
+                    'm.ED|M.ED',
+                    'b.P.ED|B.P.ED',
+                    'pHARM-D|PHARM-D',
+                    'm.Sc 5-YEAR INTEGRATED CHEMISTRY|M.Sc 5-YEAR INTEGRATED CHEMISTRY',
+                    'm.Sc 5-YEAR INTEGRATED BIOTECHNOLOGY|M.Sc 5-YEAR INTEGRATED BIOTECHNOLOGY'
+                    ];
+
+            }
+            for(var option in optionArray){
+                var pair = optionArray[option].split("|");
+                var newOption = document.createElement("option");  
+                newOption.value = pair[0];
+                newOption.innerHTML = pair[1];
+                s2.options.add(newOption); 
+            }
+
+        }
+
+
+    </script>
     
 </body>
 </html>
